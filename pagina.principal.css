@@ -1,0 +1,25 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.308);
+}
+.divbuscador{
+    display: flex;
+    align-items: center;
+    margin-bottom: 9px;
+    margin-top: 1%;
+    margin-left:8% ;
+    height: 40px;
+    width: 380px;
+    border: none;
+    border-radius: 15px;
+    background-color:rgba(0, 0, 0, 0.082);
+    gap: 8px;
+}
+.buscar{
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 18px;
+}
