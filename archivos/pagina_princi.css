@@ -62,19 +62,31 @@ body{
 
 }
 
-.divbuscador{
-    display: flex;
-    align-items: center;
-    margin-bottom: 16px;
-    margin-top: 1%;
-    margin-left:8% ;
-    height: 40px;
-    width: 380px;
-    border: none;
-    border-radius: 15px;
-    background-color:rgba(0, 0, 0, 0.082);
-    gap: 8px;
-}
+.container-input {
+    position: relative;
+  }
+  
+  .input {
+    width: 150px;
+    padding: 10px 0px 10px 40px;
+    border-radius: 9999px;
+    border: solid 1px #bdbdbd;
+    transition: all .2s ease-in-out;
+    outline: none;
+    opacity: 0.8;
+  }
+  
+  .container-input svg {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translate(0, -50%);
+  }
+  
+  .input:focus {
+    opacity: 1;
+    width: 250px;
+  }
 .buscar{
     border: none;
     background: none;
@@ -179,7 +191,7 @@ body{
         width: 290px;
         height: 284px;
         background-color: #FFFDF2;
-        border-radius:;
+        border-radius:0;
         transition: all .2s;
        }
        .espaciocard{
