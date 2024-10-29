@@ -29,7 +29,7 @@
 </head>
 <body>
     <div id="loader" class="loader">
-        <img src="../pagina/imagenes/logoscarojas.png" alt="Logo de la página" class="loader-logo">
+        <img src="../imagenes/pagina/logo.scarojas 3.png" alt="Logo de la página" class="loader-logo">
     </div>
 
     <script>
@@ -45,17 +45,20 @@
     <header>
         <div class="header">
         <a href="http://localhost/registrarse.html">
-            <img src="../pagina/imagenes/logoscarojas.png" alt="logo"  width="90px" height="68px">
+            <img src="/imagenes/pagina/logo.scarojas 3.png" alt="logo"  width="90px" height="68px">
         
         </a> 
             
 
-            <div class="divbuscador">
-                <img class="lupa" src="../pagina/imagenes/lupaigpng" alt="lupa" width="20" height="20">
-                <input class="buscar" type="text" placeholder="Buscar"  ></input>
-                </div>
+        <div class="container-input">
+  <input type="text" placeholder="Search" name="text" class="input">
+  <svg fill="#000000" width="20px" height="20px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg">
+    <path d="M790.588 1468.235c-373.722 0-677.647-303.924-677.647-677.647 0-373.722 303.925-677.647 677.647-677.647 373.723 0 677.647 303.925 677.647 677.647 0 373.723-303.924 677.647-677.647 677.647Zm596.781-160.715c120.396-138.692 193.807-319.285 193.807-516.932C1581.176 354.748 1226.428 0 790.588 0S0 354.748 0 790.588s354.748 790.588 790.588 790.588c197.647 0 378.24-73.411 516.932-193.807l516.028 516.142 79.963-79.963-516.142-516.028Z" fill-rule="evenodd"></path>
+</svg>
+</div>
 
-            <img class="carrito" src="../pagina/imagenes/carrito-de-compras.png" alt="carrito"  height="40px"  width="40px" >
+
+            <img class="carrito" src="/imagenes/pagina/carrito-de-compras.png" alt="carrito"  height="40px"  width="40px" >
         
 
         </div>
@@ -134,10 +137,10 @@
 
                 <div class="carrusel-slides">
                     <div class="slide">
-                        <img src="../pagina/imagenes/botines/botinesturquesa.jpg" alt="botin en descuento">
+                        <img src="/imagenes/botines/adidasoro.jpg" alt="botin en descuento">
                     </div>
                     <div class="slide">
-                        <img src="../pagina/imagenes/botines/doradosmessi.jpg" alt="botin en descuento">
+                        <img src="/imagenes/botines/adidasoro.2.jpg" alt="botin en descuento">
                     </div>
                 </div>
 
@@ -155,13 +158,13 @@
 
                 <div class="carrusel-slides">
                     <div class="slide">
-                        <img src="../pagina/imagenes/botines/messinuevos.webp" alt="botin nuevo">
+                        <img src="/imagenes/botines/doradosmessi.jpg" alt="botin nuevo">
                     </div>
                     <div class="slide">
-                        <img src="../pagina/imagenes/botines/messinuevos2.webp" alt="botin nuevo">
+                        <img src="/imagenes/botines/doradosmessi.2.jpg" alt="botin nuevo">
                     </div>
                     <div class="slide">
-                        <img src="../pagina/imagenes/botines/messinuevos4.webp" alt="botin nuevo">
+                        <img src="/imagenes/botines/messidorados.4.jfif" alt="botin nuevo">
                     </div>
                 </div>
 
