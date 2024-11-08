@@ -259,7 +259,7 @@ ul {
 .descripcion {
     width: 300px;
     padding: 20px;
-    background-color: #f8f8f8;
+    background-color: #e9e9e9;
     border-radius: 8px;
 }
 .exclusivo{
@@ -540,6 +540,8 @@ ul {
     bottom: calc(var(--height) + var(--gap-between-tooltip-to-button));
   }
   
-  
+  .precio{
+  font-size: 50px;
+}
   
   

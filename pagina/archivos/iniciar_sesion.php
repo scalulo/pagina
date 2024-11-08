@@ -26,7 +26,7 @@
                 <button >Ingresar</button>
             </div>
     </div>
-    </main>
+    </main> 
 
 </body>
 </html>

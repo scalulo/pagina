@@ -154,7 +154,7 @@
             <div class="carrusel">
                 <input type="radio" name="carrusel-nuevo" id="slide-nuevo-1" checked>
                 <input type="radio" name="carrusel-nuevo" id="slide-nuevo-2">
-                <input type="radio" name="carrusel-nuevo" id="slide-nuevo-3">
+               
 
                 <div class="carrusel-slides">
                     <div class="slide">
@@ -163,9 +163,7 @@
                     <div class="slide">
                         <img src="/imagenes/botines/doradosmessi.2.jpg" alt="botin nuevo">
                     </div>
-                    <div class="slide">
-                        <img src="/imagenes/botines/messidorados.4.jfif" alt="botin nuevo">
-                    </div>
+                 
                 </div>
 
                 <div class="carrusel-controls">
@@ -558,7 +556,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const ninoCheckbox = checkboxes[1];    // El segundo checkbox (Niño)
     
     adultoCheckbox.addEventListener('change', function() {
-        if (this.checked) {
+        if (this.checked) {http://localhost/pagina/pagina/archivos/pagina_princi.php
             ninoCheckbox.checked = false;
         }
     });
