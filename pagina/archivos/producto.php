@@ -42,7 +42,7 @@
 </svg>
 </div>
 
-            <img class="carrito" src="/imagenes/pagina/carrito-de-compras.png" alt="carrito"  height="40px"  width="40px" >
+            <img class="carrito" src="/imagenes/pagina/usuario.png" alt="carrito"  height="40px"  width="40px" >
         
 
         </div>
@@ -121,7 +121,6 @@
 
             </select>
             <p><?php echo $fila ["descripcion"]?></p>
-
             <div class="button">
 <div class="button-wrapper">
   <div class="text">Comprar</div>
@@ -136,6 +135,7 @@
 
 
         </div>
+       
 
     </div>
     

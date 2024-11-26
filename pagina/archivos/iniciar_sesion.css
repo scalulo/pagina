@@ -3,7 +3,7 @@ body{
     background-position: center;
     background-size: cover;
     }
-    
+
     .textgrand{
         font-size: 40px;
         font-weight: bold;
@@ -17,7 +17,7 @@ body{
     box-shadow: 0 0 30px rgb(255 255 255 / 63%);
     width: 800px;
     height: 560px;
-    margin-left: 250px;
+    margin-left: 25%;
     margin-top: 50px;
     flex-direction: column;
     background-color: rgba(255, 255, 255, 0.616);

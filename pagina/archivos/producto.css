@@ -125,6 +125,7 @@ body {
     text-align: center;
     font-size: 16px;
     color: #111;
+    background-color: #ebe5e5;
 }
 
 .carousel-navigation {
@@ -185,6 +186,8 @@ body {
     transition: opacity 0.3s;
     border: 1px solid #e5e5e5;
     object-fit: cover;
+    background-color: #ebe5e5;
+
 }
 
 .secu:hover {

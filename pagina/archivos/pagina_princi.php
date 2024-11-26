@@ -4,10 +4,10 @@
     $database = "pagina_web";
     $username = "alumno";
     $password = "alumnoipm";
-    
     $conexion = mysqli_connect($servername, $username, $password, $database); // se crea la conexion
+    session_start(); // Inicia la sesión
 
-
+    
     if (!$conexion) {
         die("Conexion fallida: " . mysqli_connect_error());
     }
@@ -51,15 +51,28 @@
             
 
         <div class="container-input">
-  <input type="text" placeholder="Search" name="text" class="input">
-  <svg fill="#000000" width="20px" height="20px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg">
-    <path d="M790.588 1468.235c-373.722 0-677.647-303.924-677.647-677.647 0-373.722 303.925-677.647 677.647-677.647 373.723 0 677.647 303.925 677.647 677.647 0 373.723-303.924 677.647-677.647 677.647Zm596.781-160.715c120.396-138.692 193.807-319.285 193.807-516.932C1581.176 354.748 1226.428 0 790.588 0S0 354.748 0 790.588s354.748 790.588 790.588 790.588c197.647 0 378.24-73.411 516.932-193.807l516.028 516.142 79.963-79.963-516.142-516.028Z" fill-rule="evenodd"></path>
-</svg>
+    <form action="http://localhost/archivos/filtros.php" method="GET">
+        <input type="text" placeholder="Search" name="busqueda" class="input" required>
+       
+            <svg fill="#000000" width="20px" height="20px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg">
+                <path d="M790.588 1468.235c-373.722 0-677.647-303.924-677.647-677.647 0-373.722 303.925-677.647 677.647-677.647 373.723 0 677.647 303.925 677.647 677.647 0 373.723-303.924 677.647-677.647 677.647Zm596.781-160.715c120.396-138.692 193.807-319.285 193.807-516.932C1581.176 354.748 1226.428 0 790.588 0S0 354.748 0 790.588s354.748 790.588 790.588 790.588c197.647 0 378.24-73.411 516.932-193.807l516.028 516.142 79.963-79.963-516.142-516.028Z" fill-rule="evenodd"></path>
+            </svg>
+    </form>
 </div>
+<?php
 
 
-            <img class="carrito" src="/imagenes/pagina/carrito-de-compras.png" alt="carrito"  height="40px"  width="40px" >
-        
+
+if (isset($_SESSION["email"])) {
+    // Muestra el icono de usuario si la sesión está activa
+    echo '<a href="http://localhost/archivos/cuenta.php"><img class="carrito" src="/imagenes/pagina/usuario.png" alt="carrito" height="40px" width="40px"></a>';
+} else {
+    // Muestra el enlace de inicio de sesión si la sesión no está activa
+    echo '<a href="iniciar_sesion.php"><img class="carrito" src="/imagenes/pagina/usuario.png" alt="iniciar sesión" height="40px" width="40px"></a>';
+}
+?>
+
+            
 
         </div>
 
@@ -109,8 +122,8 @@
                                 <option value="medias">Medias</option>
                                 <option value="guantes">Guantes</option>
                                 <option value="canilleras">Canilleras</option>
-                                <option value="medicinales">Medicinales</option>
-                                <option value="bolsos">Bolsos</option>
+                                <option value="medicinal">Medicinal</option>
+                                <option value="bolso">Bolsos</option>
                                 <option value="accesorios">Accesorios</option>
                             </select>
                         </div>

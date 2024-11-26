@@ -1,3 +1,50 @@
+<?php
+session_start(); // Inicia sesión
+
+// Datos de conexión
+$servername = "127.0.0.1";
+$database = "pagina_web";
+$username = "alumno";
+$password = "alumnoipm";
+
+// Conexión a la base de datos
+$conexion = mysqli_connect($servername, $username, $password, $database);
+
+// Verificar conexión
+if (!$conexion) {
+    die("Error de conexión: " . mysqli_connect_error());
+}
+
+// Verificar que se enviaron los datos
+if (isset($_POST["email"]) && isset($_POST["contraseña"])) {
+    $email = $_POST["email"];
+    $password1 = $_POST["contraseña"];
+
+    // Consulta para obtener los datos del usuario
+    $query = "SELECT contraseña, nombre FROM cliente WHERE email = '$email'";
+    $resultado = mysqli_query($conexion, $query);
+
+    if ($resultado && mysqli_num_rows($resultado) > 0) {
+        $fila = mysqli_fetch_assoc($resultado);
+
+        // Verificar contraseña
+        if ($password1 === $fila["contraseña"]) {
+            $_SESSION["nombre"] = $fila["nombre"];
+            header("Location: http://localhost/archivos/cuenta.php");
+            exit();
+        } else {
+            echo "<p style='color:red;'>Contraseña incorrecta. Inténtalo de nuevo.</p>";
+        }
+    } else {
+        echo "<p style='color:red;'>El email no está registrado.</p>";
+    }
+} 
+
+// Cerrar la conexión
+mysqli_close($conexion);
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
